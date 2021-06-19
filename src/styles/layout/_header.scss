@@ -1,0 +1,128 @@
+.header__top {
+    align-items: center;
+    background-color: $light-gray;
+    display: flex;
+    font-size: .7em;
+    height: 30px;
+    justify-content: space-between;
+    padding-inline: 170px;
+
+    a {
+        color: $medium-gray;
+        text-decoration: none;
+
+        &:hover {
+            color: black;
+        }
+    }
+
+    .header__top-last {
+        img {
+            width: 1.2em;
+        }
+        a {
+            padding-inline: .5em;
+        }
+    }
+    
+    
+}
+
+.header__middle {
+    align-items: center;
+    display: flex;
+    margin-block: 10px;
+    padding-block: 10px;
+    padding-inline: 170px;
+}
+
+.header__middle-form {
+    flex: 3 1 auto;
+    padding-inline: 1em;
+
+    input {
+        outline: none;
+        padding: 1em 3em;
+        background-color: $light-gray;
+        border: none;
+        border-radius: 3px;
+        height: 40px;
+        width: 100%;
+    }
+
+    // temp solution
+    i {
+        position: absolute;
+        top: 67px;
+        left: 250px;
+    }
+
+}
+
+.header__middle-icons {
+
+    display: flex;
+
+    a {
+        color: $dark-gray;
+        padding: .8em;
+        display: flex;
+        justify-content: center;
+        text-decoration: none;
+        transition: background-color .3s ease;
+
+        &:hover {
+            background-color: $light-gray;
+            border-radius: 10px;
+        }
+    }
+
+    i {
+        font-size: 1.3em;
+    }
+
+    span {
+        font-size: .6em;
+        font-weight: normal;
+    }
+}
+
+// temp
+.header__middle-logo img {
+    width: 50px;
+}
+
+
+.header__bottom {
+
+    padding-inline: 170px;
+    
+    ul {
+        list-style: none;
+        display: flex;
+        font-size: .7em;
+        overflow: scroll;
+
+        &::-webkit-scrollbar {
+            display: none;
+        }
+
+        li {
+            margin-inline: 1em;
+            font-weight: bold;
+
+            &:hover {
+                border-bottom: 2px solid $dark-gray;
+                padding-bottom: .4em;
+            }
+
+            a {
+                color: $dark-gray;
+                text-decoration: none;
+                
+            }
+        }
+    }  
+}
+
+
